@@ -15,7 +15,6 @@ function deleteTodo(event) {
     return toDo.id !== Number(parentTarget.id);
   });
 
-  debugger;
   toDoArr = cleanToDos;
   saveToDos();
 }
@@ -32,7 +31,7 @@ function paintToDo(text) {
   const span = document.createElement("span");
   const newId = toDoArr.length + 1;
 
-  delBtn.innerText = "X";
+  delBtn.innerText = "❌";
   delBtn.addEventListener("click", deleteTodo);
   span.innerText = text;
   li.appendChild(span);
