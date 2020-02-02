@@ -6,9 +6,6 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Momentum | dillon</title>
 
-    <!-- Weather Icons stuff -->
-    <link rel="stylesheet" href="css/weather-icons.min.css" />
-
     <!-- Font stuff -->
     <link
       href="https://fonts.googleapis.com/css?family=Open+Sans:300|Roboto:300|Source+Sans+Pro:300&display=swap"
@@ -35,15 +32,16 @@
     <!-- our files -->
     <link rel="stylesheet" href="css/momentum.css" type="text/css" />
 
-    <!-- <script src="js/momentum-weather.js"></script> -->
-    <!-- <!-- <script src="js/momentum-quote.js"></script> -->
+    <script src="js/momentum-weather.js"></script>
+    <script src="js/momentum-quote.js"></script>
     <script src="js/momentum.js"></script>
   </head>
   <body>
     <div class="bg-wrapper">
       <div class="text-right top-right weather">
-        <div>
-          <i class="wi wi-day-sunny"></i>&nbsp;<span id="weather"></span>&#8451;
+        <div class="weather-flex">
+          <div id="weather-icon" class="weather-icon"></div>
+          &nbsp;<span id="weather" style="font-size: 1.5vw"></span>&nbsp;&#8451;
         </div>
         <h5 id="location"></h5>
       </div>
