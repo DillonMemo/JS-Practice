@@ -1,0 +1,30 @@
+<!-- 카운터 샘플 예제 -->
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Counter</title>
+  </head>
+  <body>
+    <h1 id="counter">0</h1>
+
+    <input type="button" value="+" id="increase" />
+    <input type="button" value="-" id="decrease" />
+
+    <script>
+      document.querySelector('#increase').addEventListener('click', function(e) {
+        var counter = document.querySelector('#counter');
+
+        counter.innerHTML = Number(counter.innerHTML) + 1;
+      });
+
+      document.querySelector('#decrease').addEventListener('click', function(e) {
+        var counter = document.querySelector('#counter');
+
+        counter.innerHTML = Number(counter.innerHTML) - 1;
+      });
+    </script>
+  </body>
+</html>
